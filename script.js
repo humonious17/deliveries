@@ -1,3 +1,7 @@
+document.getElementById('calculateButton').addEventListener('click', function() {
+    document.getElementById('calculatorSection').scrollIntoView({ behavior: 'smooth' });
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     // Updating slider values display
     const codOrders = document.getElementById('codOrders');
