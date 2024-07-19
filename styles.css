@@ -1,0 +1,121 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    background-color: #034d83;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.banner h1 {
+    margin-bottom: 1rem;
+}
+
+#calculateButton {
+    background-color: #46C1D4;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+main {
+    padding: 2rem;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.calculator-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#calculatorForm {
+    flex: 2;
+    margin-right: 2rem;
+}
+
+.form-group, .slider-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="number"], select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.slider-group {
+    display: flex;
+    align-items: center;
+}
+
+input[type="range"] {
+    flex-grow: 1;
+    margin: 0 1rem;
+}
+
+#calculateCostBreakdown {
+    background-color: #034d83;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#results {
+    flex: 1;
+    background-color: #034d83;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.percentage {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#productCategory {
+    width: 300px;
+    border-radius: 87px;
+}
+
+.form_container1, .form_container2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group {
+    width: 48%;
+}
+
+.form_container1 input{
+    border-radius: 87px;
+}
+
+.form_container2 input{
+    border-radius: 87px;
+}

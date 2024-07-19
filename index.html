@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accelerate Your Deliveries</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="banner">
+        <h1>Accelerate Your Deliveries<br>at Lower Cost Per Shipment</h1>
+        <button id="calculateButton">Calculate Cost Savings</button>
+    </header>
+    
+    <main>
+        <h2>Calculate Your Cost</h2>
+        <div class="calculator-container">
+            <form id="calculatorForm">
+                <div class="form-group">
+                    <label for="productCategorytext">Product Category</label>
+                    <select id="productCategory">
+                        <option value="apparel">Apparel</option>
+                        <option value="cosmetics">Cosmetics</option>
+                        <option value="electronics">Electronics</option>
+                    </select>
+                </div>
+                
+                <div class="form_container1">
+                    <div class="form-group">
+                        <label for="landedCost">Average Landed Cost Per Unit (INR)</label>
+                        <input type="number" id="landedCost" min="0" step="1">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="sellingPrice">Average Selling Price Per Unit (INR)</label>
+                        <input type="number" id="sellingPrice" min="0" step="1">
+                    </div>
+                </div>
+                
+                <div class="form_container2">
+                    <div class="form-group">
+                        <label for="inventory">Average Inventory Holding (Units)</label>
+                        <input type="number" id="inventory" min="0" step="1">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="dailySales">Average Daily Sale (Units)</label>
+                        <input type="number" id="dailySales" min="0" step="1">
+                    </div>
+                </div>
+                
+                
+                <div class="slider-group">
+                    <label>COD Orders (%)</label>
+                    <input type="range" id="codOrders" min="0" max="100" step="10" value="0">
+                    <span id="codOrdersValue">0%</span>
+                </div>
+                
+                <div class="slider-group">
+                    <label>RTO Orders (%)</label>
+                    <input type="range" id="rtoOrders" min="0" max="100" step="10" value="0">
+                    <span id="rtoOrdersValue">0%</span>
+                </div>
+                
+                <button type="submit" id="calculateCostBreakdown" style="border-radius: 10px;">Calculate Cost Breakdown</button>
+            </form>
+            <div id="results" style="border-radius: 17px;">
+                <span class="percentage">X%</span>
+            </div>            
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
